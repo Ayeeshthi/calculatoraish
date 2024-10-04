@@ -1,0 +1,109 @@
+body {
+    background-color: #f0f2f5; /* Light gray background for a clean look */
+    font-family: 'Arial', sans-serif; /* Simple font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container styling */
+.container {
+    max-width: 400px; /* Restrict the calculator's width */
+    background-color: #ffffff; /* White background for the calculator */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Calculator header style */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text for better contrast */
+}
+
+/* Styling for the calculator display */
+input#display {
+    height: 60px;
+    font-size: 32px;
+    text-align: right;
+    border: none;
+    background-color: #f7f7f7; /* Light background for the display */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Row layout for buttons */
+.row {
+    display: flex;
+    gap: 10px; /* Gap between buttons */
+    margin-bottom: 10px;
+}
+
+/* Basic button styles */
+button {
+    height: 60px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Numeric buttons (0-9) */
+button.btn-light {
+    background-color: #f7f7f7;
+    color: #333; /* Dark text */
+}
+
+/* Operator buttons (+, -, *, /, %) */
+button.btn-danger {
+    background-color: #ff7675; /* Red for operator buttons */
+    color: white;
+}
+
+/* Function buttons (AC, +/-) */
+button.btn-secondary {
+    background-color: #b2bec3; /* Neutral gray color */
+    color: white;
+}
+
+/* Equal button */
+button.btn-primary {
+    background-color: #6c5ce7; /* Purple for the equal button */
+    color: white;
+}
+
+/* Add hover effect for buttons */
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Adjust the appearance when clicking a button */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Media query for small screens */
+@media (max-width: 500px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    input#display {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 20px;
+        height: 50px;
+    }
+}
